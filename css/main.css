@@ -26,6 +26,20 @@ body {
   scroll-behavior: smooth;
 }
 
+/* =========== Style headings ========== */
+
+h1 {
+  font-size: 225%;
+  line-height: 133%;
+  margin-bottom: 0.33333em;
+}
+
+h2 {
+  font-size: 150%;
+  line-height: 150%;
+  margin-bottom: 0.5em;
+}
+
 /* =========== Sections ========== */
 
 section {
