@@ -48,11 +48,12 @@ nav ul {
 header {
   align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding: 2em 12em;
 }
 
 header h1,
 header nav {
+  color: #fff;
   flex: 1;
 }
 
@@ -66,7 +67,9 @@ nav li {
 
 nav a {
   color: #fff;
+  font-size: .75em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a[href="buy-now"] {
