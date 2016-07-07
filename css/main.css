@@ -1,3 +1,13 @@
 /* ========== Import fonts from Google ========== */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* =========== Reset some basic elements ========== */
+
+body, h1, h2, h3,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
