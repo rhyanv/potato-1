@@ -11,3 +11,19 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+/* =========== Style the body ========== */
+
+body {
+  color: #111;
+  background-color: #fff;
+  font: normal 100%/150% "Open Sans",
+                         "Helvetica Neue",
+                          Helvetica,
+                          Arial,
+                          sans-serif;
+  font-feature-settings: "kern" 1; /* TODO: needs vendor prefixes? */
+  font-kerning: normal;            /* TODO: needs vendor prefixes? */
+  scroll-behavior: smooth;
+}
+
+
