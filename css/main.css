@@ -75,4 +75,15 @@ a[href="buy-now"] {
   padding: 5px 20px;
 }
 
+/* =========== About ========== */
+
+#about {
+  text-align: center;
+}
+
+#about h1 {
+  margin: 2em;
+}
+
+
 
