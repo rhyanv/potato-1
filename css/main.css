@@ -36,6 +36,9 @@ section {
 
 #intro {
   background-color: #ccb081;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 /* =========== Style the header & nav ========== */
@@ -76,6 +79,14 @@ a[href="buy-now"] {
   border: 1px solid white;
   border-radius: 20px;
   padding: 5px 20px;
+}
+
+/* =========== Intro hero ========== */
+
+#intro .hero {
+  color: #fff;
+  margin: auto;
+  text-align: center;
 }
 
 /* =========== About ========== */
