@@ -26,4 +26,17 @@ body {
   scroll-behavior: smooth;
 }
 
+/* =========== Sections ========== */
+
+section {
+  min-height: 100vh;
+}
+
+/* =========== Intro ========== */
+
+#intro {
+  background-color: #ccb081;
+}
+
+
 
