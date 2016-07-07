@@ -38,5 +38,41 @@ section {
   background-color: #ccb081;
 }
 
+/* =========== Style the header & nav ========== */
+
+header,
+nav ul {
+  display: flex;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+header h1,
+header nav {
+  flex: 1;
+}
+
+nav ul {
+  justify-content: space-around;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a[href="buy-now"] {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
 
 
