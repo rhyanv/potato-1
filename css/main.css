@@ -1,7 +1,7 @@
 /* ========== Import fonts from Google ========== */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
+/*@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");*/
 
 /* =========== Reset some basic elements ========== */
 
@@ -41,9 +41,6 @@ body {
   right:0;
   width: 220px;
 }
-#intro {
-  padding: 30px;
-}
 .content {
   flex: 1;
   background: #eee;
@@ -51,32 +48,30 @@ body {
   transform: translate3d(0,0,0);
   transition: transform .3s;
 }
-
 .content.isOpen {
   transform: translate3d(-220px,0,0);
 }
 
 .button {
   /*position: fixed;*/
-  margin-left: auto;
+  flex-direction: row;
+  justify-content: flex-end;
   cursor: pointer;
+  color: #fff;
+  font-size: 3em;
+
 }
 
-.button:before {
-  content: '\f0c9';
-  color: #fff;
-  font: 42px fontawesome;
-}
 .logo {
-  font-size: 16px;
-  line-height: 50px;
-  text-align: center;
+  flex-flow: row;
+  font-size: 3em;
+  /*text-align: center;*/
   text-transform: uppercase;
-  align-items: center;
-  margin:auto;
+  text-decoration: none;
+  margin-right:auto;
   /*letter-spacing: 7px;*/
-  color: #CCB081;
-  border-bottom: 1px solid #222;
+  color: #fff;
+  /*border-bottom: 1px solid #222;*/
   background: none;
 }
 
@@ -124,7 +119,15 @@ nav {
   display: flex;
 }
 
+#top-nav {
+align-items: center;
+background:none;
+display:flex;
+padding: 20px 10px;
+}
+
 header {
+  display:flex;
   align-items: center;
   justify-content: space-around;
   /*padding: 2em 2em;*/
