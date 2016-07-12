@@ -1,6 +1,7 @@
 /* ========== Import fonts from Google ========== */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
 
 /* =========== Reset some basic elements ========== */
 
@@ -11,6 +12,9 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html>* {
+  box-sizing: border-box;
+}
 /* =========== Style the body ========== */
 
 body {
@@ -24,6 +28,65 @@ body {
   font-feature-settings: "kern" 1; /* TODO: needs vendor prefixes? */
   font-kerning: normal;            /* TODO: needs vendor prefixes? */
   scroll-behavior: smooth;
+}
+
+/* =========== Mobile Hamburger ========== */
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  right:0;
+  width: 220px;
+}
+#intro {
+  padding: 30px;
+}
+.content {
+  flex: 1;
+  background: #eee;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
+  transform: translate3d(0,0,0);
+  transition: transform .3s;
+}
+
+.content.isOpen {
+  transform: translate3d(-220px,0,0);
+}
+
+.button {
+  /*position: fixed;*/
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.button:before {
+  content: '\f0c9';
+  color: #fff;
+  font: 42px fontawesome;
+}
+.logo {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  margin:auto;
+  /*letter-spacing: 7px;*/
+  color: #CCB081;
+  border-bottom: 1px solid #222;
+  background: none;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 50px;
+  font-size: 12px;
+  color: #eee;
+  border-bottom: 1px solid #222;
 }
 
 /* =========== Style headings ========== */
@@ -56,26 +119,31 @@ section {
 }
 
 /* =========== Style the header & nav ========== */
-
-header,
-nav ul {
+nav {
+  align-items: center;
   display: flex;
 }
 
 header {
   align-items: center;
-  justify-content: space-between;
-  padding: 2em 12em;
+  justify-content: space-around;
+  /*padding: 2em 2em;*/
 }
 
 header h1,
 header nav {
-  color: #fff;
+  color: #CCB081;
   flex: 1;
 }
 
 nav ul {
+  align-items: center;
+  height: 50vh;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: space-around;
+  margin: auto;
+
 }
 
 nav li {
@@ -83,14 +151,14 @@ nav li {
 }
 
 nav a {
-  color: #fff;
-  font-size: .75em;
+  color:#CCB081;
+  font-size: 1.25em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 a[href="buy-now"] {
-  border: 1px solid white;
+  border: 1px solid #CCB081;
   border-radius: 20px;
   padding: 5px 20px;
 }
@@ -112,6 +180,3 @@ a[href="buy-now"] {
 #about h1 {
   margin: 2em;
 }
-
-
-
